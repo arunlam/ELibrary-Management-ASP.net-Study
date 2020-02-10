@@ -10,7 +10,7 @@
 namespace ELibraryManagement {
     
     
-    public partial class loginpage {
+    public partial class adminlogin {
         
         /// <summary>
         /// txtUsername control.
@@ -31,21 +31,12 @@ namespace ELibraryManagement {
         protected global::System.Web.UI.WebControls.TextBox txtPwd;
         
         /// <summary>
-        /// btnLogin control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogin;
-        
-        /// <summary>
-        /// btnSignup control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSignup;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

@@ -10,21 +10,15 @@ using System.Web.UI.WebControls;
 
 namespace ELibraryManagement
 {
-    public partial class loginpage : System.Web.UI.Page
+    public partial class adminlogin : System.Web.UI.Page
     {
         string conStr = ConfigurationManager.ConnectionStrings["conElibrary"].ConnectionString;
-
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void btnLogin_Click(object sender, EventArgs e)
-        {
-            _checkLogin();
-        }
-
-        bool _checkLogin()
+        protected void Button1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -44,23 +38,21 @@ namespace ELibraryManagement
                 {
                     while (dr.Read())
                     {
-                        Response.Write("<scrip>alert('" + dr.GetValue(8).ToString() + "')</script>");
+                        Response.Write("<scrip>alert('" + dr.GetValue(0).ToString() + "')</script>");
                     }
-                    return true;
                 }
                 else
                 {
                     Response.Write("<scrip>alert('Invalid user')</script>");
-                    return false;
+
                 }
 
             }
             catch (Exception ex)
             {
                 Response.Write("<scrip>alert('" + ex.Message + "')</script>");
-                return false;
-            }
 
+            }
         }
     }
 }

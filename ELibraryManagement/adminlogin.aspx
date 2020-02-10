@@ -1,10 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="loginpage.aspx.cs" Inherits="ELibraryManagement.loginpage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="adminlogin.aspx.cs" Inherits="ELibraryManagement.adminlogin" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-
     <div class="container">
         <div class="row">
             <div class="col-md-6 mx-auto">
@@ -13,48 +11,43 @@
                         <div class="row">
                             <div class="col">
                                 <center>
-                                    <img width="150px" src="imgs/logo.png" />
-                                </center>
+                           <img width="150px" src="imgs/adminuser.png"/>
+                        </center>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <center>
-                                    <h3>Member Login</h3>
-                                </center>
+                           <h3>Admin Login</h3>
+                        </center>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <hr />
+                                <hr>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
+                                <label>Admin ID</label>
                                 <div class="form-group">
-                                    <label>Member ID</label>
-                                    <asp:TextBox CssClass="form-control" ID="txtUsername" runat="server" placeholder="member id"></asp:TextBox>
-
+                                    <asp:TextBox CssClass="form-control" ID="txtUsername" runat="server" placeholder="Admin ID"></asp:TextBox>
+                                </div>
+                                <label>Password</label>
+                                <div class="form-group">
+                                    <asp:TextBox CssClass="form-control" ID="txtPwd" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                                 </div>
                                 <div class="form-group">
-                                    <label>Password</label>
-                                    <asp:TextBox CssClass="form-control" ID="txtPwd" runat="server" placeholder="password" TextMode="Password"></asp:TextBox>
+                                    <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
                                 </div>
-                                <div class="form-group">
-                                    <asp:Button ID="btnLogin" class="btn btn-primary btn-block btn-lg" runat="server" Text="Login" OnClick="btnLogin_Click" />
-                                </div>
-                                <div class="form-group">
-                                    <a href="signup.aspx">
-                                        <asp:Button ID="btnSignup" class="btn btn-info btn-block btn-lg" runat="server" Text="Sign up" /></a>
-                                </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="home.aspx"><< Back to Home </a>
+                <a href="homepage.aspx"><< Back to Home</a><br>
+                <br>
             </div>
         </div>
-        "
     </div>
+
 </asp:Content>

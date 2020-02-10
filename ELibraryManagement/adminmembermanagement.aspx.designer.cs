@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication3 {
+namespace ELibraryManagement {
     
     
     public partial class adminmembermanagement {
